@@ -40,10 +40,13 @@ class Stack
 end
 
 def reverse_list(list)
+    # initialize a new stack
     stack = Stack.new
 
     while list
+        # push the first position of a node to a stack
         stack.push(list.value)
+        # Move to the next node
         list = list.next_node
     end
 
